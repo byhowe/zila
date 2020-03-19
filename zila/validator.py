@@ -4,16 +4,17 @@ from typing import List
 
 
 class Validator:
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
         pass
 
     def validate(self, field: str = None):
         pass
 
 
-def validate(field: str = None, validators: List[Validator] = []) -> List[Validator]:
+def validate(field: str,
+             validators: List[Validator]) -> List[Validator]:
     failed: List[Validator] = []
     for validator in validators:
         if not validator.validate(field):
-            failed.append(Validator)
+            failed.append(validator)
     return failed
