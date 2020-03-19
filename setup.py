@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="zila",
-    version="0.1",
+    version="0.2",
     packages=find_packages(),
     author=""Byron"",
     author_email="37745048+byhowe@users.noreply.github.com",
